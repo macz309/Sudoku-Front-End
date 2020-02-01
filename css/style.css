@@ -1,0 +1,156 @@
+
+/* -----------------Generales--------------- */
+
+*{
+    font-family: 'Bangers', cursive;
+}
+
+body{
+    background: black;
+}
+
+h1{
+    background: #ffffff;
+    font-family: 'Molle', cursive;
+    font-size: 40px;
+    margin: 0;
+}
+
+button{
+    background: #50a9a9;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 100px;
+}
+
+p{
+    font-size: 20px;
+}
+
+/* -----------------Cabecera--------------- */
+
+.header{
+    width: 735px;
+    margin: 10px auto;
+    padding: 15px 0;
+    text-align: center;
+    background: #ffffff;
+    border-top: 3px solid #50a9a9 ;
+    border-bottom: 3px solid #50a9a9;
+    border-radius: 10px;
+}
+
+/* Seleccion de dificultad */
+.dificultades{
+    width: 300px;
+    margin: 10px auto;  
+    display: flex;
+    justify-content: space-between;  
+}
+.dificultades button{
+    width: 80px;
+}
+.dificultades button:hover{
+    background: #deeaea;
+}
+
+/* Iniciar el juego */
+#start{
+    padding: 10px 20px;
+    font-size: 25px;
+    margin: 0 auto;
+    background: #40c840;
+}
+#start:hover{
+    background: #86f386;
+}
+
+/* -----------------Contenido Principal--------------- */
+
+.container{
+    width: 735px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-areas:"sudoku marcar";
+    transition: all .3s ease;
+    border-top: 3px solid #50a9a9 ;
+    border-bottom: 3px solid #50a9a9;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+/* Sudoku */
+#sudoku{
+    margin: 20px auto;
+    grid-area: sudoku;
+}
+.cell{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    border-radius: 5px;
+}
+.r3, .r6{
+    margin-top: 10px;
+}
+.azul{
+    background: #deeaea;
+}
+.falta::placeholder{
+    color:red;
+}
+.marcador::placeholder{
+    color: blue;
+}
+
+/* Marcadores */
+#marcar{
+    grid-area: marcar;
+    margin: 20px auto;
+}
+.marcadores{
+    display: flex;
+    align-items: center;
+}
+.marcadores button{
+    width: 90px;
+    height: 25px;
+    margin-left: 10px;
+    font-size: 20px;
+    background: #40c840;
+}
+.marcadores button:hover{
+    background: #deeaea;
+}
+
+/* Info Juego */
+#registro{
+    width: 150px;
+    border: 2px solid #deeaea;
+    padding-left: 10px;
+
+}
+
+/* -----------------Dialogos--------------- */
+
+.dialogo{
+    width: 250px;
+    /* border: none; */
+    /* border-bottom: 3px solid #50a9a9; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: #3c3434;
+    text-align: center;
+    padding: 10px 0;
+    padding-top: 0;
+}
+
+.dialogo div{
+    width: 100%;
+    height: 20px;
+    background: #50a9a9;
+    border-bottom: 2px solid #3c3434;
+}

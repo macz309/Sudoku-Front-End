@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Luckiest+Guy|Molle:400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link id="favicon" rel="shortcut icon" type="image/png" href="/img/sudo.jpg"" src="/img/sudo.jpg">
+    <title>Sudoku</title>
+</head>
+<body>
+    <!-- Cabecera -->
+    <div class="header">
+        <h1>Sudoku</h1>
+        <!-- Dificultades -->
+        <div class="dificultades">
+            <button id="easy" onclick="vacios=3">Fácil</button>
+            <button id ="medium" onclick="vacios=4">Medio</button>
+            <button id ="hard" onclick="vacios=4">Difícil</button><br>
+        </div>
+        <!-- Iniciar el juego -->
+        <button id="start" onclick="iniciar()">Nuevo Juego</button>
+    </div>
+
+    <!-- Contenedor Principal -->
+    <div class="container">
+        <!-- Sudoku -->
+        <div id="sudoku"></div>
+        <!-- Marcador -->
+        <div id="marcar">
+            <div id=registro>
+                <p id="puntuacion">Puntuacion: 0</p>
+                <p id="vidas">Intentos: 3</p>
+            </div>
+            <!-- Modo Marcadores -->
+            <div class="marcadores">
+                <p>Marcadores: </p>
+                <button id="marcadores" onclick="modoMarcadores()">Activar</button>
+            </div>
+        </div>
+    </div>
+<!--+++++++++++++++++ Dialogos +++++++++++++++++-->
+    <!-- Ganar -->
+    <dialog id="dialogoGanar" class="dialogo">
+        <div></div>
+        <p id="pGanar"></p>
+        <button onclick="dialogoGanar.close()">Aceptar</button>
+    </dialog>
+    <!-- Perder -->
+    <dialog id="dialogoPerder" class="dialogo">
+        <div></div>
+        <p id="pPerder"></p>
+        <button onclick="dialogoPerder.close()">Aceptar</button>
+    </dialog>
+
+</body>
+<script src="/js/index.js"></script>
+</html>
