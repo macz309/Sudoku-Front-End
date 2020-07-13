@@ -69,7 +69,7 @@ p{
 /* -----------------Contenido Principal--------------- */
 
 .container{
-    width: 735px;
+    width: 800px;
     margin: 20px auto;
     display: grid;
     grid-template-areas:"sudoku marcar";
